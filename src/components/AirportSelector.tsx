@@ -14,7 +14,6 @@ const AirportSelector: React.FC<{ label: string; onAirportSelect: (airport: any)
           'https://api.core.openaip.net/api/airports?page=1&limit=1000&sortBy=name&sortDesc=false&country=US&apiKey=f521332962574bc300f5a27ec4a8c8d4'
         );
 
-        // Map the response data to match the structure you need
         const usAirports = response.data.items
           .map((airport: any) => ({
             name: airport.name,
